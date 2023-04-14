@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class estacoes {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -19,8 +19,29 @@ public class JavaApplication {
             }
         } else {
             if (mes == 4 || mes == 5 || mes == 6) {
-                System.out.println("?");
+                if (mes == 6 && dia >= 20) {
+                    System.out.println("Inverno");
+                } else {
+                    System.out.println("Outono");
+                }
+            } else {
+                if (mes == 7 || mes == 8 || mes == 9) {
+                    if (mes == 9 && dia >= 22) {
+                        System.out.println("Primavera");
+                    } else {
+                        System.out.println("Inverno");
+                    }
+                } else {
+                    if (mes == 10 || mes == 11 || mes == 12) {
+                        if (mes == 12 && dia >= 21) {
+                            System.out.println("Verão");
+                        } else {
+                            System.out.println("Primavera");
+                        }
+                    }
+                }
             }
         }
     }
 }
+
